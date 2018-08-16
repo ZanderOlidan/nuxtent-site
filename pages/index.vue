@@ -21,6 +21,7 @@
           Singer: {{ song.singer }} <br>
           Author: {{ song.author }}
         </li>
+        <img src="minimalWolfsEye.jpg">
       </ul>
     </div>
   </section>
@@ -30,7 +31,7 @@
 export default {
   asyncData: async ({ app, route, payload }) => ({
     songs: payload || await app.$content('/').getAll()
-  })
+  }),
 }
 </script>
 <style>
