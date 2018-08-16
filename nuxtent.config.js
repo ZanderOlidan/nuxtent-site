@@ -7,8 +7,8 @@ module.exports = {
     ],
     isPost: false
   },
-  api: {
-    baseURL: 'https://jolly-lewin-dd1240.netlify.com',
-    browserBaseURL: 'https://jolly-lewin-dd1240.netlify.com'
-  }
+  // api: {
+  //   baseURL: 'https://jolly-lewin-dd1240.netlify.com',
+  //   browserBaseURL: 'https://jolly-lewin-dd1240.netlify.com'
+  // }
 }
