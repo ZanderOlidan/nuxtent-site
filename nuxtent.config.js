@@ -9,6 +9,6 @@ module.exports = {
   },
   api: {
     baseURL: 'https://jolly-lewin-dd1240.netlify.com',
-    browserBaseURL: 'http://localhost:3000'
+    browserBaseURL: 'https://jolly-lewin-dd1240.netlify.com'
   }
 }
