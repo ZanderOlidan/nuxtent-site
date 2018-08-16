@@ -8,7 +8,7 @@ module.exports = {
     isPost: false
   },
   api: {
-    baseURL: 'http://localhost:3000',
+    baseURL: 'https://jolly-lewin-dd1240.netlify.com',
     browserBaseURL: 'http://localhost:3000'
   }
 }
