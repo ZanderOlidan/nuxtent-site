@@ -5,18 +5,34 @@
         Seamlessly use content files in your Nuxt.js sites.
       </h2>
       <div class="home-links">
-        <nuxt-link 
+        <!-- <nuxt-link 
           to="/hello-world" 
-          class="button--green">See Your First Post</nuxt-link>
+          class="button--green">See Your First Post</nuxt-link> -->
         <a 
           href="https://github.com/nuxt-community/content-module" 
           target="_blank" 
           class="button--grey">Learn More on Github</a>
       </div>
+      <ul>
+        <li 
+          v-for="(song, index) in songs" 
+          :key="index">
+          <a :href="song.permalink">Title: {{ song.title }}</a><br>
+          Singer: {{ song.singer }} <br>
+          Author: {{ song.author }}
+        </li>
+      </ul>
     </div>
   </section>
 </template>
 
+<script>
+export default {
+  asyncData: async ({ app, route, payload }) => ({
+    songs: payload || await app.$content('/').getAll()
+  })
+}
+</script>
 <style>
 .home-container
 {
