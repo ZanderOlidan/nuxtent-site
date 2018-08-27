@@ -1,11 +1,13 @@
 <template>
   <div>
-    <a
+    <!-- <a
       class="site-nav"
       href="/"
-    >
+    > -->
+    <nuxt-link to="/">
       <h1 class="site-title"> NUXTENT </h1>
-    </a>
+    </nuxt-link>
+    <!-- </a> -->
     <nuxt/>
   </div>
 </template>

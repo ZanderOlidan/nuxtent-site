@@ -1,14 +1,14 @@
 <template>
   <section class="content-container">
-    <h1 class="post-title"> {{ song.title }} </h1>
-    <nuxtent-body :body="song.body" />
+    <h1 class="post-title"> {{ content.title }} </h1>
+    <nuxtent-body :body="content.body" />
   </section>
 </template>
 
 <script>
 export default {
   asyncData: async ({ app, route, payload }) => ({
-    song: payload || await app.$content('/songs').get(route.path)
+    content: payload || await app.$content('/defaults').get(route.path)
   })
 }
 </script>

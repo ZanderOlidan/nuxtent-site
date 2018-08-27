@@ -8,13 +8,22 @@ module.exports = {
   //   isPost: false
   // },
   content: [
-    "songs", {
-      permalink: '/songs/:slug',
-      page: '/_songs',
-      generate: [
-        'get', 'getAll'
-      ]
-    }
+    ["songs", 
+      {
+        permalink: '/songs/:slug',
+        page: '/_songs',
+        generate: [
+          'get', 'getAll'
+        ],
+        isPost: false
+      }
+    ],
+    ["defaults", {
+      permalink: '/:slug',
+      page: '/_default',
+      generate: ['get', 'getAll'],
+      isPost: false
+    }]
   ],
   api: {
     baseURL: 'http://localhost:3000',

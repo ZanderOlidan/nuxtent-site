@@ -30,7 +30,7 @@
 <script>
 export default {
   asyncData: async ({ app, route, payload }) => ({
-    songs: payload || await app.$content('/').getAll()
+    songs: payload || await app.$content('/songs').getAll()
   }),
 }
 </script>
